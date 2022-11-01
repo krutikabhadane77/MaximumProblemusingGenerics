@@ -1,11 +1,12 @@
 //UC1 Given 3 Integers find the maximum
 //UC2 Given 3 Floats find the maximum
+//UC3 Given 3 Strings find the maximum
 package com.corejavagenerics;
 
 public class TestMaximum {
-    public static void getMaximumFloat(Float[] arr) {
+    public static void getMaximumString(String[] arr) {
 
-        Float max = arr[0];
+        String max = arr[0];
         int position = 0;
         for (int i = 0; i < arr.length; i++) {
             int a = arr[i].compareTo(max);
@@ -14,11 +15,11 @@ public class TestMaximum {
                 position = i;
             }
         }
-        System.out.println("Maximum integer is " + max+" and its position is "+position);
+        System.out.println("Maximum string is " + max+" and its position is "+position);
     }
     public static void main(String[] args) {
-        Float[] arr = {2.3f,4.2f,7.5f};
-        getMaximumFloat(arr);
+        String[] arr = {"Apple", "Peach", "Banana"};
+        getMaximumString(arr);
     }
 
 }
